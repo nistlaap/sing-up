@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5a6d7798-d709-4ed5-b398-232b3051a921" name="dsshv">
+        <fileTransfer rootFolder="/var/www/html/Ann/signup" accessType="SFTP" host="51.15.223.188" port="46497" sshConfigId="9ce2b2e5-21a5-43be-a3b0-b3ad30ae78da" sshConfig="root@51.15.223.188:46497 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

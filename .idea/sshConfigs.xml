@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="51.15.223.188" id="9ce2b2e5-21a5-43be-a3b0-b3ad30ae78da" keyPath="C:\Users\nistl\.ssh\id_rsa" port="46497" nameFormat="DESCRIPTIVE" username="root" />
+    </configs>
+  </component>
+</project>

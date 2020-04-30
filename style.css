@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("images/anemone.jpg") center;
+    background-size: cover;
+    background-color: #ef8ac6;
+}
+
+.banner{
+    color: aliceblue;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-heading{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    border-bottom: 7px solid aliceblue;
+    border-top: 7px solid aliceblue;
+    white-space: pre-wrap;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.banner-heading:after{
+    content: '';
+    width: 5px;
+    height: 80px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 5.2%;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%{background-color: aliceblue}
+    50%{background-color: transparent}
+    100%{background-color: aliceblue}
+}
+.arrow{
+    font-size: 80px;
+    margin-bottom: 50px;
+    animation: anim1 3s infinite;
+}
+.banner-btn{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 20px;
+    letter-spacing: 2px;
+    background: transparent;
+    color: aliceblue;
+    border: transparent;
+    border-bottom: 4px solid aliceblue;
+    border-top: 4px solid aliceblue;
+    transition: transform 1s;
+    outline: none;
+    cursor: pointer;
+}
+.banner-btn:hover{
+    transform: translateY(-5px);
+}
+@keyframes anim1 {
+    0%{transform: translate(0)}
+    20%{transform: translateY(-20px)}
+    40%{transform: translateY(-40px)}
+    60%{transform: translateY(60px)}
+    80%{transform: translateY(20px)}
+    100%{transform: translateY(20px)}
+}
+
+.form-container{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 50px deeppink;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+}
+.sign-up-form{
+    width: 50%;
+    background-color: lavenderblush;
+    padding: 120px 50px;
+    box-sizing: border-box;
+}
+.sign-up-form p{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.sign-up-form label{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.sign-up-form button{
+    display: block;
+    margin-top: 80px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 10px;
+    letter-spacing: 2px;
+    background: transparent;
+    color: black;
+    border: transparent;
+    border-bottom: 4px solid deeppink;
+    border-top: 4px solid deeppink;
+    transition: border-color 1s;
+    outline: none;
+}
+.sign-up-form button:hover{
+    border-bottom-color: black;
+    border-top-color: black;
+}
+.sign-up-form input[type="checkbox"]{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    outline: none;
+    background-color: deeppink;
+    margin: 0 7px;
+}
+.sign-up-form input[type="checkbox"]::before{
+    content: '';
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: lavenderblush;
+    box-shadow: inset 0 0 5px deeppink;
+    position: absolute;
+    transform: translateY(-1px);
+}
+.sign-up-form input:checked[type="checkbox"]::before{
+    transform: translate(13px, -1px);
+}
+.form-input{
+    width: 300px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: #ef8ac6;
+    border: none;
+    border-bottom: 3px solid deeppink;
+    margin-bottom: 50px;
+    padding: 5px 0;
+    outline: none;
+    transition: border-bottom-color 0.8s;
+}
+.form-input:focus{
+    border-bottom-color: black;
+}
+.x-btn{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header{
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05)), url("images/jellyfish1.jpg") center no-repeat;
+    background-size: cover;
+}
+.header h1{
+    font-family: 'Roboto Condensed',sans-serif;
+    text-align: center;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: lavenderblush;
+}
+@media screen and (max-width: 800px) {
+    .banner{
+        width: 350px;
+    }
+    .banner-heading{
+        font-size: 50px;
+        text-align: center;
+    }
+    .arrow{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .banner-btn{
+        font-size: 30px;
+    }
+    .form-container{
+        width: 450px;
+        height: 300px;
+        position: absolute;
+    }
+    .sign-up-form{
+        padding: 50px 30px;
+    }
+    .form-input{
+        width: 150px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 7px 0;
+    }
+    .sign-up-form p{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .sign-up-form button{
+        margin-top: 20px;
+        width: 150px;
+        font-size: 14px;
+    }
+    .sign-up-form label{
+        font-size: 12px;
+    }
+    .header h1{
+        font-size: 50px;
+    }
+    .banner-heading:after{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+
+}
